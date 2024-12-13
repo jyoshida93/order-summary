@@ -62,6 +62,7 @@ body {
 
 .hero__description {
     width: 70%;
+    color: var(--desaturated-blue)
 }
 
 .plan {
