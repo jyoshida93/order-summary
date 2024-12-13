@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --purple-blue: #766cf1;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+
+.order {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pale-blue);
+}
+
+.order__inner-container {
+    width: 50%;
+    max-width: 450px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    padding-bottom: 2.5em;
+}
+
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark-blue);
+}
+
+.hero__header {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.hero__description {
+    width: 70%;
+}
+
+.plan {
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+}
+
+.plan__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan__left-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan__type {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.plan__price {
+    margin: 0;
+    color: var(--dark-blue);
+}
+
+.plan__change {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--bright-blue);
+}
+
+.plan__change:hover {
+    text-decoration: none;
+    /* color: #867fc7 */
+    color: var(--purple-blue)
+}
+
+.btn {
+    width: 80%;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 900;
+}
+
+.btn--shadow {
+    box-shadow: 0 14px 8px rgba(94, 103, 182, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--purple-blue)
+}
+
+.cancel {
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
+
+.cancel--no-underline {
+    text-decoration: none;
+}
